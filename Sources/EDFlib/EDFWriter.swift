@@ -393,7 +393,7 @@ public class EDFWriter {
      *
      * @return 0 on success, otherwise -1
      */
-    func setPhysicalMaximum(edfsignal : Int, phys_max : Double) -> Int {
+    public func setPhysicalMaximum(edfsignal : Int, phys_max : Double) -> Int {
         if ((edfsignal < 0) || (edfsignal >= edfsignals) || (datarecords != 0)) {
             return -1;
         }
@@ -433,7 +433,7 @@ public class EDFWriter {
      *
      * @return 0 on success, otherwise -1
      */
-    func setPhysicalMinimum(edfsignal : Int, phys_min : Double) -> Int {
+    public func setPhysicalMinimum(edfsignal : Int, phys_min : Double) -> Int {
         if ((edfsignal < 0) || (edfsignal >= edfsignals) || (datarecords != 0)) {
             return -1;
         }
@@ -473,7 +473,7 @@ public class EDFWriter {
      *
      * @return 0 on success, otherwise -1
      */
-    func setDigitalMaximum(edfsignal : Int, dig_max : Int) -> Int {
+    public func setDigitalMaximum(edfsignal : Int, dig_max : Int) -> Int {
         if ((edfsignal < 0) || (edfsignal >= edfsignals) || (datarecords != 0)) {
             return -1;
         }
@@ -523,7 +523,7 @@ public class EDFWriter {
      *
      * @return 0 on success, otherwise -1
      */
-    func setDigitalMinimum(edfsignal : Int, dig_min : Int) -> Int {
+    public func setDigitalMinimum(edfsignal : Int, dig_min : Int) -> Int {
         if ((edfsignal < 0) || (edfsignal >= edfsignals) || (datarecords != 0)) {
             return -1;
         }
