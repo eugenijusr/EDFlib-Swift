@@ -43,18 +43,18 @@ public class EDFException : Error
 {
     private var error : Int
     private var err_str : String
-    
+
     public init(err: Int, msg: String)
     {
         self.error = err;
         self.err_str = msg;
     }
-    
+
     public func getErrNum() -> Int
     {
         return error;
     }
-    
+
     public func getMessage() -> String
     {
         return err_str;
